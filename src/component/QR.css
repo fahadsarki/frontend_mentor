@@ -1,0 +1,140 @@
+/* 
+## Colors
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+*/
+
+@import url('https://fonts.google.com/specimen/Outfit');
+
+:root {
+    --font-outfit: "Outfit";
+    --letter-spacing: 0.05em;
+  }
+
+@media screen and (max-wdith: 376px) {
+    .qr {
+        position: fixed;
+        background-color:hsl(212, 45%, 89%) ;
+        width: 70vw;
+        height: 100vh;
+      }
+    
+      .qr-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        column-gap: 0.5vh;
+        width: 60vw;
+        height: 85vh;
+        top: 10%;
+        left: 35%;
+        border-radius: 20px;
+      }
+    
+      .qr-codebox {
+        background-image: url('../images/image-qr-code.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 335px;
+        height: 360px;
+        align-self: center;
+        padding: 5px 5px 5px 5px;
+        margin: 20px 20px;
+        border-radius: 20px;
+    
+      }
+    
+      .qr-text {
+        /* font-family: var(--font-outfit); */
+        position: relative;
+        font-size: 16px;
+        width: 290px;
+        left: 13%;
+        justify-content: center;
+      }
+    
+      .qr-text .qr-h1 {
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+        position: relative;
+        /* text-align: justify; */
+        /* justify-content: center; */
+        /* width: 290px; */
+        /* left: 15%; */
+      }
+    
+      .qr-text .qr-p {
+        font-weight: 400;
+        color: hsl(220, 15%, 55%);
+      }
+}
+
+@media screen and (min-width: 1440px ) {
+    
+}
+
+  .qr {
+    position: fixed;
+    background-color:hsl(212, 45%, 89%) ;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .qr-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    column-gap: 0.5vh;
+    width: 375px;
+    height: 85vh;
+    top: 10%;
+    left: 35%;
+    border-radius: 20px;
+  }
+
+  .qr-codebox {
+    background-image: url('../images/image-qr-code.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 335px;
+    height: 360px;
+    align-self: center;
+    padding: 5px 5px 5px 5px;
+    margin: 20px 20px;
+    border-radius: 20px;
+
+  }
+
+  .qr-text {
+    /* font-family: var(--font-outfit); */
+    position: relative;
+    font-size: 16px;
+    width: 290px;
+    left: 13%;
+    justify-content: center;
+  }
+
+  .qr-text .qr-h1 {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    position: relative;
+    /* text-align: justify; */
+    /* justify-content: center; */
+    /* width: 290px; */
+    /* left: 15%; */
+  }
+
+  .qr-text .qr-p {
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+  }
